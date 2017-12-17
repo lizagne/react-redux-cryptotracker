@@ -8,7 +8,7 @@ import {
 
 const initialState = {
 	isFetching: false,
-	data: null,
+	data: [],
 	hasError: false,
 	errorMessage: null
 }
@@ -26,6 +26,7 @@ export default CryptoReducer = (state = initialState, action) => {
 		case FETCHING_COIN_DATA_SUCCESS:
 			return {
 				...state,
+				isFetching: false,
 				data: action.payload,				
 			}
 
