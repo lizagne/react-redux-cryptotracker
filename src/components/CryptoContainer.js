@@ -30,7 +30,6 @@ class CryptoContainer extends Component {
     render() {
 
         const { crypto } = this.props;
-        const { contentContainer } = styles;
 
         if (crypto.isFetching) {
             return (
@@ -45,19 +44,20 @@ class CryptoContainer extends Component {
             )
         }
         return (
-            <ScrollView contentContainerStyle={contentContainer}>
-                {this.renderCoinCards()}
+            <ScrollView style={ styles.container }>
+                { this.renderCoinCards() }
             </ScrollView>
         )
     }
 }
 
-const styles = {
-    contentContainer: {
-        paddingBottom: 100,
-        paddingTop: 55
-    }
-}
+const styles = StyleSheet.create({
+    container: {
+        width: '100%',
+        padding: 12,
+        marginTop: 20
+    },
+})
 
 const mapStateToProps = (state) => {
     return {
