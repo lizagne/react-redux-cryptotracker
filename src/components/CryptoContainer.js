@@ -26,7 +26,6 @@ class CryptoContainer extends Component {
         ) 
     }
 
-
     render() {
 
         const { crypto } = this.props;
@@ -54,8 +53,6 @@ class CryptoContainer extends Component {
 const styles = StyleSheet.create({
     container: {
         width: '100%',
-        padding: 12,
-        marginTop: 20
     },
 })
 
