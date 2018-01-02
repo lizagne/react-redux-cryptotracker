@@ -18,6 +18,6 @@ To view:
   
   scan QR code
   
-  #Demo of Cryptotracker App:
+  ## Demo of Cryptotracker App:
 
 ![Demo](https://user-images.githubusercontent.com/26763021/34479950-5db2c1d6-efa1-11e7-9f45-da2e62c56ae6.gif)
